@@ -48,5 +48,5 @@ if st.button('Generar histograma de precios'):
     st.plotly_chart(hist_fig)
 
 if st.checkbox('Generar gráfico de dispersión: Year vs Price'):
-    fig4 = px.scatter(car_data, x="year", y="price", title="Gráfico de dispersión: Año vs Precio")
+    fig4 = px.scatter(car_data, x="model_year", y="price", title="Gráfico de dispersión: Año vs Precio")
     st.plotly_chart(fig4)
